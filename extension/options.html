@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>采集设置 · iWork</title><link rel="stylesheet" href="panel.css"></head>
+<body class="options"><header class="masthead"><span class="wordmark">iWork<span class="wordmark-dot"> / </span>采集设置</span><span class="muted">本机保存</span></header><main>
+<p class="eyebrow">适配你正在使用的问题页面</p><h1>告诉采集器，内容在哪里。</h1><p class="muted">选择器使用 CSS 语法。默认适配示例页面；真实 iWork 页面需要按实际结构配置。</p>
+<form id="settings-form"><div id="fields" class="settings-grid"></div><div class="settings-actions"><button class="primary" type="submit">保存设置</button><button id="reset" class="secondary" type="button">恢复默认</button><button id="check" class="text-button" type="button">检查本地助手</button></div></form>
+<p id="status" class="notice" role="status" aria-live="polite" hidden></p>
+<div class="explanation"><h2>采集范围</h2><p>仅在你点击采集时读取当前标签页，不会在所有站点后台注入。先展开正文与评论、显示附件，再执行采集。</p><p>编号只接受明确的数字字段或问题 URL 路径 / 查询参数，不会使用标题中的年份或其他数字。编号字段优先读取 <code>data-bug-id</code>，也可读取 <code>value</code> 或纯数字文本。</p><p>附件需要下载链接与原始文件名；可使用 <code>href</code> / <code>data-url</code> 和 <code>download</code> / <code>data-name</code>。图片读取 <code>src</code>，文件名读取 <code>data-name</code> / <code>alt</code>。临时授权下载链接只传给本地助手，扩展不会将其保存在设置中。</p><p>受登录失效、分页、跨域下载或页面结构变化影响的证据会列为缺口。不会写入问题、发送消息或修改附件。</p></div>
+</main><script type="module" src="options.mjs"></script></body></html>

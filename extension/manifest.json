@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "iWork 证据采集",
+  "description": "从当前问题页面采集原始证据，在本机整理报告并记录采集缺口。",
+  "version": "0.1.15",
+  "minimum_chrome_version": "120",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0++qdZcA7t0/RaPVEcfxy3ABSgbBA/kDcgDJuQ1jzMjxWcAwffTltFgiJmNFQkc7v9BterhLgLAUQD6npDDSFilVrXrKQoSD6i+XfLdPVsJ8JCey91Tfb7OwFU8qeA7IpsW6T41FbXzPXL/BTe6piSoqFNZRob+638Ig0WyVoNi63y1kESMkY+lPo6v91gHzO+aVsxazztLfIltFJgeSNVbMSGOWkO+XSELG8D6reyKVLsLvoPSoH/4V5C99vQuXD8jMdw7N/E7fvHavWTIpGS6gASukbiE6mNDr3Z7bh4iuc5dmV3KGdZ2JQvEqSRSFMNKyt3dOOjjXugnOHGI8qwIDAQAB",
+  "permissions": ["activeTab", "scripting", "storage", "nativeMessaging", "downloads", "alarms"],
+  "background": {"service_worker": "background.mjs", "type": "module"},
+  "action": {"default_title": "采集当前 Bug", "default_popup": "popup.html"},
+  "options_page": "options.html",
+  "content_security_policy": {"extension_pages": "script-src 'self'; object-src 'self'"}
+}

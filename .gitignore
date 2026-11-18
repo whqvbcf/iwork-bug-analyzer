@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+dist/
+build/
+*.egg-info/
+.superpowers/
+artifacts/
+vendor/
+docs/reviews/
+docs/superpowers/
+docs/IMPLEMENTATION_STATUS.md
+scripts/diagnose-*.py
+scripts/clean-generated-*.py
+note.txt
+local.env

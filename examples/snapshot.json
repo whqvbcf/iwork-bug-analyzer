@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "bug_id": "123456",
+  "url": "https://iwork.example/bug/123456",
+  "title": "示例工单：应用切换黑屏",
+  "description": "这是 JSON 契约示例。填写真实工单和证据地址后采集。",
+  "fields": {
+    "平台": "示例平台",
+    "版本": "示例版本",
+    "复现步骤": "启动设备，切换应用",
+    "实际表现": "短暂黑屏"
+  },
+  "comments": [],
+  "attachments": [],
+  "images": [],
+  "groups": [],
+  "file_mentions": [],
+  "coverage": {
+    "complete": false,
+    "gaps": ["示例快照没有真实附件或群线索"]
+  }
+}

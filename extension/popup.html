@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>iWork 证据采集</title><link rel="stylesheet" href="panel.css"></head>
+<body class="popup">
+  <header class="masthead"><span class="wordmark">iWork<span class="wordmark-dot"> / </span>证据采集</span><button id="settings" class="text-button" type="button">设置</button></header>
+  <main>
+    <section class="capture-intro"><p class="eyebrow">当前页面 → 本机证据目录</p><h1>把问题现场带回来。</h1><p class="muted">采集可见正文、评论和附件，保留原始文件名。</p><button id="capture" class="primary wide" type="button">采集当前 Bug</button></section>
+    <div id="notice" role="status" aria-live="polite" class="notice" hidden></div>
+    <section class="job-section" aria-labelledby="job-heading"><div class="section-heading"><h2 id="job-heading">最近任务</h2><button id="refresh" class="text-button" type="button">刷新</button></div>
+      <div id="empty" class="empty">打开问题详情页，然后点击「采集当前 Bug」。</div>
+      <label id="job-label" class="sr-only" for="jobs">选择采集任务</label><select id="jobs" hidden></select>
+      <article id="job" hidden>
+        <div class="job-title"><strong id="bug-id"></strong><span id="stage" class="stage"></span></div>
+        <p id="job-title" class="muted"></p>
+        <p id="activity-name" class="activity-name" hidden></p>
+        <div id="progress-track" class="progress" aria-hidden="true"><span id="progress-fill"></span></div><p id="progress-text" class="progress-text" role="status"></p>
+        <div id="gap-box" class="gap-box"><h3>仍需补充</h3><ul id="gaps"></ul></div>
+        <div class="actions"><button id="open-report" class="secondary" type="button">打开报告</button><button id="open-folder" class="secondary" type="button">打开目录</button><button id="resume" class="text-button" type="button">重试 / 继续</button><button id="cancel" class="text-button danger" type="button">取消采集</button></div>
+      </article>
+    </section>
+  </main>
+  <footer><span id="connection" class="connection">正在连接本地助手…</span><span>文件保存在本机</span></footer>
+  <script type="module" src="popup.mjs"></script>
+</body></html>
